@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dynamic Resume Builder</h1>
+            <p>Fill in your details below to generate your resume.</p>
+        </header>
+        <main>
+            <section class="form-section">
+                <h2>Input Your Details</h2>
+                <form id="resumeForm">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label for="phone">Phone:</label>
+                    <input type="text" id="phone" placeholder="Enter your phone number" required>
+
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="url" id="linkedin" placeholder="Enter your LinkedIn URL">
+
+                    <label for="github">GitHub:</label>
+                    <input type="url" id="github" placeholder="Enter your GitHub URL">
+
+                    <label for="skills">Skills (comma-separated):</label>
+                    <input type="text" id="skills" placeholder="e.g., HTML, CSS, JavaScript">
+
+                    <label for="experience">Experience:</label>
+                    <textarea id="experience" placeholder="Describe your experience"></textarea>
+
+                    <label for="education">Education:</label>
+                    <textarea id="education" placeholder="Describe your educational background"></textarea>
+
+                    <button type="button" id="generateResume">Generate Resume</button>
+                </form>
+            </section>
+            <section class="resume-section">
+                <h2>Your Resume</h2>
+                <div id="resumePreview">
+                    <p>Fill in the form above and click "Generate Resume" to see the preview here.</p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            &copy; 2024 Dynamic Resume Builder
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
